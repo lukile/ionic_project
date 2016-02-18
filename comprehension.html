@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function init() {
+            var indexes = [1, 3, 0, 2];
+            var countries = ["France", "England", "Italy", "Spain"];
+            var y = 0;
+            while(y < 4) {
+                var ref = indexes[y];
+                alert("country = "+countries[ref]);
+                y++;
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+</body>
+</html>
+
+<!-- Ce code permet d'afficher le contenu du tableau dans l'ordre définit par les index à savoir :
+    en premier l'indice 1 : England,
+    en second l'indice 3 : Spain,
+    en troisième l'indice 0 : France,
+    en quatrième l'indice 2 : Italy;
+
+    On boucle tant que l'indice du tableau ne dépasse pas l'indice 3, on affiche le contenu du tableau comme
+    mentionné précédemment, et on incrémente le compteur.
+
+ -->
